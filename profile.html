@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#181818">
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="page site-container" id="page">
+
+    <header class="header">
+  <div class="header__left">
+    <nav class="nav">
+      <ul class="nav__list list-reset">
+        <li class="nav__item list-reset"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__item list-reset">
+          <a href="#" class="nav__link links_subnav">Статьи</a>
+          <ul class="subnav list-reset">
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="post.html">Создание сайтов</a></li>
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="post.html">Интернет-маркетинг</a></li>
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="post.html">Продвижение видео</a></li>
+          </ul>
+        </li>
+        <li class="nav__item list-reset"><a href="text.html" class="nav__link">Обо мне</a></li>
+        <li class="nav__item list-reset">
+          <a href="#" class="nav__link links_subnav">Реклама</a>
+          <ul class="subnav list-reset">
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="#" data-modal="social-modal">Социальные
+                сети</a></li>
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="#">Видео-реклама</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__right">
+    <nav class="nav">
+      <ul class="nav__list list-reset">
+        <li class="nav__item list-reset"><a href="profile.html" class="nav__link">Профиль</a></li>
+        <li class="nav__item list-reset"><a href="signin.html" class="nav__link">Войти</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger active" type="button" id="sidebarToggle">
+      <span>Открыть навигацию</span>
+    </button>
+
+    <form action="search.html" method="GET" class="header__form search">
+      <input class="search__input" type="text" placeholder="Поиск по блолгу">
+    </form>
+  </div>
+</header>
+
+
+    <asite class="sidebar" id="sidebar">
+  <div class="sidebar__header">
+    <img src="./img/sidebar-header.jpg" alt="sidebar">
+  </div>
+  <div class="sidebar__content">
+    <div class="profile">
+
+      <img class="profile__avatar" src="https://via.placeholder.com/100?text=Pro" alt="">
+      <div class="profile__header">
+        <div class="profile__name">Alex Grey</div>
+        <div class="profile__prof">блог front-end разрабтчика</div>
+      </div>
+
+      <ul class="social list-reset">
+        <li class="social__item list-reset">
+          <a class="social__link" href="#" target="_blank">
+            <img src="./img/vk.svg" height="20px" alt="Alex vk">
+          </a>
+        </li>
+        <li class="social__item list-reset">
+          <a class="social__link" href="#" target="_blank">
+            <img src="./img/instagram.svg" height="20px" alt="Alex instogram">
+          </a>
+        </li>
+        <li class="social__item list-reset">
+          <a class="social__link" href="#" target="_blank">
+            <img src="./img/pinterest.svg" height="20px" alt="Alex pinterest">
+          </a>
+        </li>
+      </ul>
+
+      <div class="profile__text">
+        <p>Front-end разработчик. Практик верстальщтик сайтов. Созданием сайтов занимаюсь с&nbsp;2012&nbsp;года. Работал
+          в&nbsp;нескольких&nbsp;ИТ компаниях и&nbsp;набрал более 10&nbsp;000 часов в&nbsp;создании сайтов различной
+          сложности.</p>
+      </div>
+    </div>
+
+    <nav class="nav nav-mobile">
+      <ul class="nav__list list-reset">
+        <li class="nav__item list-reset"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__item list-reset">
+          <a href="#" class="nav__link links_subnav">Статьи</a>
+          <ul class="subnav list-reset">
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="#">Создание сайтов</a></li>
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="#">Интернет-маркетинг</a></li>
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="#">Продвижение видео</a></li>
+          </ul>
+        </li>
+        <li class="nav__item list-reset"><a href="text.html" class="nav__link">Обо мне</a></li>
+        <li class="nav__item list-reset">
+          <a href="#" class="nav__link links_subnav">Реклама</a>
+          <ul class="subnav list-reset">
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="#">Видео-реклама</a></li>
+            <li class="subnav__iten list-reset"><a class="subnav__link" href="#">Вопросы</a></li>
+          </ul>
+        </li>
+        <li class="nav__item list-reset"><a href="profile.html" class="nav__link">Профиль</a></li>
+        <li class="nav__item list-reset"><a href="#" class="nav__link">Выйти</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="sidebar__footer">
+    <a href="works.html" class="btn btn-red btn-reset">Мои работы</a>
+    <button class="btn btn-blue btn-reset" data-modal="contact-modal">Написать мне</button>
+  </div>
+</asite>
+
+
+    <main class="primary">
+      <div class="container">
+
+
+        <h1 class="primary__title">Профиль</h1>
+
+        <form action="/" method="POST" class="form">
+          <div class="cabinet">
+            <div class="cabinet__form">
+              <div class="form__group form__group-medium">
+                <input type="text" class="form__control" placeholder="Ваше имя" value="Алексей Чудайкин">
+                <span class="form__line"></span>
+              </div>
+
+              <div class="form__group form__group-medium">
+                <input type="email" class="form__control" placeholder="Ваш e-mail" value="allchudaykin@yandex.ru">
+                <span class="form__line"></span>
+              </div>
+
+              <div class="form__group form__group-medium">
+                <input type="password" class="form__control" placeholder="Новый пароль">
+                <span class="form__line"></span>
+              </div>
+
+              <div class="form__group form__group-medium">
+                <input type="password" class="form__control" placeholder="Подтвердите пароль">
+                <span class="form__line"></span>
+              </div>
+            </div>
+
+            <div class="cabinet__avatar">
+              <img src="https://via.placeholder.com/150x150?text=Avatar" alt="Аватар">
+
+              <label class="cabinet__file">
+                <input type="file">Выбрать аватар
+              </label>
+            </div>
+
+          </div>
+          <div class="form__footer">
+            <button class="btn btn-blue btn-rounded" type="submit">Сохранить</button>
+          </div>
+
+
+        </form>
+
+
+      </div>
+    </main>
+
+
+  </div>
+
+  <div class="modal" id="story-modal">
+  <div class="modal__content modal__content-story">
+    <video class="modal__video" src="" poster="https://via.placeholder.com/420x580?text=Poster for video"></video>
+  </div>
+</div><!-- modal -->
+
+  <div class="modal" id="contact-modal">
+  <div class="modal__content modal__content-contact">
+
+    <button class="modal__close" type="button">
+      <img src="./img/close.svg" width="18px" height="18px" alt="Закрыть">
+    </button>
+
+    <form action="/" method="POST" class="form">
+
+      <div class="form__group form__group-medium">
+        <input type="text" class="form__control" placeholder="Ваше имя">
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group-medium">
+        <input type="email" class="form__control" placeholder="Ваш e-mail">
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group-medium">
+        <textarea class="form__control form__control-textarea" placeholder="Текст сообщения"></textarea>
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__footer">
+        <div class="form__group form__group-medium">
+          <button class="btn btn-blue btn-rounded" type="submit">Отправить</button>
+        </div>
+      </div>
+    </form>
+
+    <ul class="modal__footer list-reset">
+      <li class="list-reset">e-mail:<a href="mailto:info@website.ru" class="link">info@website.ru</a></li>
+      <li class="list-reset">тел:<a href="tell:+70000007777" class="link">+7 000 000 77 77</a></li>
+    </ul>
+
+  </div><!-- modal__content -->
+</div><!-- modal -->
+
+  <div class="modal" id="social-modal">
+  <div class="modal__content">
+
+    <button class="modal__close" type="button">
+      <img src="./img/close.svg" width="18px" height="18px" alt="Закрыть">
+    </button>
+
+    <ul class="social list-reset">
+
+      <li class="social__item social__item-content list-reset">
+        <a class="social__link" href="#" target="_blank">
+          <img src="./img/facebook.svg" alt="Социальные сети">
+        </a>
+      </li>
+
+      <li class="social__item social__item-content list-reset">
+        <a class="social__link" href="#" target="_blank">
+          <img src="./img/vkontakte.svg" alt="Социальные сети">
+        </a>
+      </li>
+
+      <li class="social__item social__item-content list-reset">
+        <a class="social__link" href="#" target="_blank">
+          <img src="./img/twitter.svg" alt="Социальные сети">
+        </a>
+      </li>
+
+      <li class="social__item social__item-content list-reset">
+        <a class="social__link" href="#" target="_blank">
+          <img src="./img/flickr.svg" alt="Социальные сети">
+        </a>
+      </li>
+
+    </ul>
+
+  </div><!-- modal__content -->
+</div><!-- modal -->
+
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
